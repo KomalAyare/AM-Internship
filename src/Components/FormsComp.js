@@ -11,7 +11,7 @@ function FormsComp() {
                     <Col>
                         <Form.Group className="mb-3" controlId='filename'>
                             <Form.Label>File Name <span>(English)*</span>:</Form.Label>
-                            <Form.Control type="text" placeholder="Enter file name" />
+                            <Form.Control required type="text" placeholder="Enter file name" />
                         </Form.Group>
                     </Col>
                 </Row>
@@ -20,7 +20,7 @@ function FormsComp() {
                     <Col>
                         <Form.Group className='mb-3' controlId='submitby'>
                             <Form.Label>Submitted By <span>*</span>:</Form.Label>
-                            <Form.Select className="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <Form.Select required className="custom-select mr-sm-2" id="inlineFormCustomSelect">
                                 <option default>Select Provider Name</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
@@ -37,7 +37,7 @@ function FormsComp() {
                     <Col>
                         <Form.Group className='mb-3' controlId='Place'>
                             <Form.Label>Place <span>*</span>:</Form.Label>
-                            <Form.Control type='text' placeholder='Reported by'/>
+                            <Form.Control required type='text' placeholder='Reported by'/>
                         </Form.Group>
                     </Col>
                 </Row>
@@ -45,42 +45,42 @@ function FormsComp() {
                 <Row>
                     <Form.Group className="mb-3" controlId='Hometitle'>
                         <Form.Label>Home Title <span>*</span>:</Form.Label>
-                        <Form.Control type="text" placeholder="Enter Home Title" />
+                        <Form.Control required type="text" placeholder="Enter Home Title" />
                     </Form.Group>
                 </Row>
 
                 <Row>
                     <Form.Group className="mb-3" controlId='Mobiletitle'>
                         <Form.Label>Mobile Title <span>(+ UC Browser : 70 Characters)*</span>:</Form.Label>
-                        <Form.Control type="text" placeholder="Enter Mobile Title" />
+                        <Form.Control required type="text" placeholder="Enter Mobile Title" />
                     </Form.Group>
                 </Row>
 
                 <Row>
                     <Form.Group className="mb-3" controlId='Articletitle'>
                         <Form.Label>Article Title <span>*</span>:</Form.Label>
-                        <Form.Control type="text" placeholder="Enter Article Title" />
+                        <Form.Control required type="text" placeholder="Enter Article Title" />
                     </Form.Group>
                 </Row>
 
                 <Row>
                     <Form.Group className="mb-3" controlId='Metatitle'>
                         <Form.Label>Meta Title <span>(Hindi + English)*</span>:</Form.Label>
-                        <Form.Control type="text" placeholder="Enter Meta Title" />
+                        <Form.Control required type="text" placeholder="Enter Meta Title" />
                     </Form.Group>
                 </Row>
 
                 <Row>
                     <Form.Group className="mb-3" controlId='topicpagekey'>
                         <Form.Label>Topic Page Keywords <span>(Only English, Hindi, Alpha-numeric)*</span>:</Form.Label>
-                        <Form.Control type="text" placeholder="Enter Tags"/>
+                        <Form.Control required type="text" placeholder="Enter Tags"/>
                     </Form.Group>
                 </Row>
 
                 <Row>
                     <Form.Group className="mb-3" controlId='metakey'>
                         <Form.Label>Meta Keywords <span>(5-10 Keywords in English)*</span>:</Form.Label>
-                        <Form.Control as="textarea" row={3} placeholder="Enter Meta Keywords"/>
+                        <Form.Control required as="textarea" row={3} placeholder="Enter Meta Keywords"/>
                     </Form.Group>
                 </Row>
 
@@ -88,21 +88,21 @@ function FormsComp() {
                     <Col>
                     <Form.Group className="mb-3" controlId='filekey'>
                         <Form.Label>Images <span>(w x h: 1280x720)*</span>:</Form.Label>
-                        <Form.Control type='file' multiple accept=".png,.jpg,.jpeg,.webp" width={1280} height={720}/>
+                        <Form.Control required type='file' multiple accept=".png,.jpg,.jpeg,.webp" width={1280} height={720}/>
                     </Form.Group>
                     </Col>
 
                     <Col>
                     <Form.Group className="mb-3" controlId='imgaltkey'>
                         <Form.Label>Image Alt Tag <span>*</span>:</Form.Label>
-                        <Form.Control type="text" placeholder="Enter Image Alt Tag"/>
+                        <Form.Control required type="text" placeholder="Enter Image Alt Tag"/>
                     </Form.Group>
                     </Col>
 
                     <Col>
                     <Form.Group className="mb-3" controlId='imgcapkey'>
                         <Form.Label>Image Caption <span>*</span>:</Form.Label>
-                        <Form.Control type="text" placeholder="Enter Image Caption"/>
+                        <Form.Control required type="text" placeholder="Enter Image Caption"/>
                     </Form.Group>
                     </Col>
                 </Row>
@@ -111,14 +111,14 @@ function FormsComp() {
                     <Col>
                     <Form.Group className="mb-3" controlId='vidpathkey'>
                         <Form.Label>Video Path <span>*</span>:</Form.Label>
-                        <Form.Control type="text"/>
+                        <Form.Control required type="text"/>
                     </Form.Group>
                     </Col>
                     
                     <Col>
                     <Form.Group className="mb-3" controlId='photocrekey'>
                         <Form.Label>Photo Credit <span>*</span>:</Form.Label>
-                        <Form.Control type="text"/>
+                        <Form.Control required type="text"/>
                     </Form.Group>
                     </Col>
                 </Row>
@@ -126,7 +126,7 @@ function FormsComp() {
                 <Row>
                 <Form.Group className="mb-3" controlId='catkey'>
                         <Form.Label>Category: <span>*</span>:</Form.Label>
-                        <Form.Control type="text"/>
+                        <Form.Control required type="text"/>
                     </Form.Group>
                 </Row>
 
