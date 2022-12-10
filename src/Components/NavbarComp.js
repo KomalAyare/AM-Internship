@@ -1,7 +1,5 @@
 import React from 'react';
-import {Navbar,Container} from 'react-bootstrap';
-import Navcomp from '../StyleComp/Navcomp.css';
-import {BrowserRouter as Router, Route, Switch, Routes} from 'react-router-dom';
+import {Navbar} from 'react-bootstrap';
 
 function NavbarComp() {
   return (

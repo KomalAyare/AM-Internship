@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useRef } from 'react';
-import { Container, Form, Row, Col } from 'react-bootstrap';
+import { Form, Row, Col } from 'react-bootstrap';
 import JoditEditor from 'jodit-react';
 
 function EditorComp() {
