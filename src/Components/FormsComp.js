@@ -1,6 +1,5 @@
 import React from 'react';
-import Formcomp from '../StyleComp/Formcomp.css';
-import {Form, Button, Container, Row, Col, Figure, Image} from 'react-bootstrap';
+import {Form, Button, Container, Row, Col} from 'react-bootstrap';
 import EditorComp from './EditorComp';
 
 function FormsComp() {
